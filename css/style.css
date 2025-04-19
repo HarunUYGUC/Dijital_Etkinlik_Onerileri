@@ -77,7 +77,6 @@ img {
     background-color: #90C67C;
 }
 
-
 .games, .films, .series, .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -109,7 +108,7 @@ img {
     color: #102E50;
 }
 
-.footer i:first-child:hover {
+.footer a:hover {
     color: #FFF8F8;
     cursor: pointer;
 }
@@ -117,9 +116,4 @@ img {
 .footer .add-friend button:hover {
     opacity: 0.8;
     background-color: #1DCD9F;
-}
-
-.footer .logo {
-    width: 50%;
-    margin: 20px 20px;;
 }
