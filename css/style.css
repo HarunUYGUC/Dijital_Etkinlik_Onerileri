@@ -40,14 +40,21 @@ img {
     z-index: 3;
 }
 
-.navbar .logo {
-    width: 15%;
+.navbar p {
+    font-size: 3rem;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
 }
 
 .navbar ul {
     display: flex;
     justify-content: space-around;
     width: 75%;
+}
+
+.navbar ul li {
+    border-bottom: 2px dotted #F5EEDD;
 }
 
 .navbar ul li a:hover {
