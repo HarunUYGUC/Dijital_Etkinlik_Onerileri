@@ -97,6 +97,30 @@ img {
     cursor: pointer;
 }
 
+.content-2 {
+    grid-template-columns: 1fr 3fr;
+    padding: 0;
+    margin: 0;
+}
+
+.resident-evil-2 img,
+.resident-evil-village img,
+.martian img{
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+}
+
+.resident-evil-3 img,
+.resident-evil-biohazard img,
+.interstellar img,
+.the-100 img,
+.walking-dead img {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+
 /* footer */
 .footer {
     display: grid;
