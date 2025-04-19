@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: #F5EEDD;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* navbar */
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 1rem;
+    background-color: #7AE2CF;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.navbar .logo {
+    width: 15%;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+}
+
+.navbar ul li a:hover {
+    background-color: #F5EEDD;
+    color: #077A7D;
+}
+
+/* header */
+.header {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 1rem;
+    background-color: #FFA725;
+}
+
+.fa-heart {
+    color: #BF3131;
+}
+
+/* contents */
+.content-header {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 1rem;
+    background-color: #90C67C;
+}
+
+
+.games, .films, .series, .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.contents img {
+    width: 50%;
+    height: 50%;
+    border-radius: 25%;
+}
+
+.contents img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* footer */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 1rem;
+    background-color: #F5C45E;
+    color: #102E50;
+}
+
+.footer i:first-child:hover {
+    color: #FFF8F8;
+    cursor: pointer;
+}
+
+.footer .add-friend button:hover {
+    opacity: 0.8;
+    background-color: #1DCD9F;
+}
+
+.footer .logo {
+    width: 50%;
+    margin: 20px 20px;;
+}
