@@ -54,6 +54,37 @@ img {
     width: 75%;
 }
 
+/* Responsive Navbar */
+.nav-icons .bar {
+    display: none;
+}
+
+.nav-icons .fa-bars {
+    color: #261FB3;
+}
+
+@media (max-width: 600px) {
+    .nav-icons .main-icons{
+        display: none;
+    }
+
+    .nav-icons .bar {
+        display: block;
+        border-bottom: none;
+    }
+
+    .responsive .nav-icons .bar {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+    }
+
+    .responsive .main-icons {
+        display: block;
+    }
+}
+/* buraya kadar */
+
 .navbar ul li {
     border-bottom: 2px dotted #F5EEDD;
 }

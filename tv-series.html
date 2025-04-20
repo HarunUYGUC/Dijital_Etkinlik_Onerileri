@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Diziler</title>
 </head>
-<body>
+<body id="body">
     <!-- navbar -->
-     <nav class="navbar">
-        <img class="logo pc" src="img/pc.jpg" alt="pc logo">
+    <nav id="navbar" class="navbar">
+        <p>Dijital Etkinlik Önerileri</p>
         <ul class="nav-icons">
-            <li><a href="index.html"><i class="fa-solid fa-house"></i> Ana Sayfa</a></li>
-            <li><a href="games.html"><i class="fa-solid fa-gamepad"></i> Oyunlar</a></li>
-            <li><a href="films.html"><i class="fa-solid fa-film"></i> Filmler</a></li>
-            <li><a href="tv-series.html"><i class="fa-solid fa-tv"></i> Diziler</a></li>
+            <li class="main-icons"><a href="index.html"><i class="fa-solid fa-house"></i> Ana Sayfa</a></li>
+            <li class="main-icons"><a href="games.html"><i class="fa-solid fa-gamepad"></i> Oyunlar</a></li>
+            <li class="main-icons"><a href="films.html"><i class="fa-solid fa-film"></i> Filmler</a></li>
+            <li class="main-icons"><a href="tv-series.html"><i class="fa-solid fa-tv"></i> Diziler</a></li>
+            <li class="bar"><a href="#" onclick="displayMenu()"><i class="fa-solid fa-bars"></i></a></li>
         </ul>
      </nav>
 
@@ -41,6 +42,11 @@
             </p>
       </section>
 
+      <!-- Fixed Navigation -->
+      <a href="#body" id="backtotop">
+        <i class="fas fa-chevron-circle-up"></i>
+      </a>
+
      <!-- footer -->
       <footer class="footer">
         <div>
@@ -60,5 +66,13 @@
             </form>
         </div>
       </footer>
+      
+      <!-- Responsive Navbar -->
+      <script>
+        function displayMenu() {
+            var link = document.getElementById('navbar');
+            link.classList.toggle('responsive'); // responsive varsa kaldır yoksa ekle.
+        }
+      </script>
 </body>
 </html>
