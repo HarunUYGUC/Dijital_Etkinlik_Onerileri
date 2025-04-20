@@ -6,6 +6,7 @@
 
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -112,7 +113,7 @@ img {
 
 .resident-evil-2 img,
 .resident-evil-village img,
-.martian img{
+.martian img {
     width: 60%;
     height: 60%;
     border-radius: 50%;
@@ -126,6 +127,24 @@ img {
     width: 50%;
     height: 50%;
     border-radius: 50%;
+}
+
+/* Fixed Navigation */
+#backtotop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+#backtotop i {
+    font-size: 45px;
+    color: #FF0B55;
+    opacity: 0.5;
+    transition: 0.6s;
+}
+
+#backtotop i:hover {
+    color: #b30036;
 }
 
 /* footer */
