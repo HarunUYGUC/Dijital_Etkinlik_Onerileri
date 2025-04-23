@@ -73,8 +73,13 @@
             <i class="fa-solid fa-user-group"></i>
             <h3>Arkadaşlık İsteği</h3>
             <p>Arkadaşlık isteği gönderdiyseniz isminizi buraya yazınız.</p>
-            <form action="">
-                <input type="text" placeholder="İsminizi giriniz">
+            <form 
+                name="contact"
+                method="POST" 
+                data-netlify-recaptcha="true"
+                data-netlify="true">
+                <input type="text" name="TakmaAd" placeholder="İsminizi giriniz">
+                <div data-netlify-recaptcha="true"></div>
                 <button type="submit">Gönder</button>
             </form>
         </div>
